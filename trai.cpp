@@ -1,4 +1,8 @@
-//TODO: create the algorithm.
+/*
+cpp file for the function definitions
+declared in trai.h
+*/
+
 #include "trai.h"
 #include<unistd.h>
 using namespace std;
@@ -47,9 +51,9 @@ void lane :: ins(){
 	   	cars[end] = *a;
 	    end++;
 	}
-	else{
+	/*else{
 		cout<<"Buffer Overflow"<<endl;
-	}
+	}*/
 }
 
 void lane :: del(){
@@ -106,7 +110,7 @@ void Lane :: deleteMultiple(int delNum){
 		del();
 }
 
-void Lane :: find_avgWait(){				//incomplete
+void Lane :: find_avgWait(){
 	int i;
 
 	if(start < end){
@@ -239,17 +243,11 @@ void intersection :: print_avg_wait(){
 	cout<<total<<endl;
 }
 
-/*void intersection :: algo(){
-	lane selected_lane = compareLanes();
-
-	lane_go(selected_lane);
-}*/
-
 void intersection :: default_algo(){
 	initialize_traffic_multiple();
 	print();
 	int i;
-	//for(i = 0; i < cycles; i++){
+	//for(i = 0; i < cycles; i++){			//define the number of cycles the algorithm should run for
 		A = lane_go(A, defaultWait);
 		print();
 		B = lane_go(B, defaultWait);

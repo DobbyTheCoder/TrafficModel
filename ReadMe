@@ -1,0 +1,7 @@
+ABOUT THE PROJECT
+
+Traffic AI aims to build an algorithm which can tackle the traffic at a busy intersection. As of now the project only exists as an algorithm, but it can be implemented using AI on a camera which will be able to correctly detect the number of cars in a lane, at an intersection.
+
+Instead of releasing cars for predefined time (say 60 seconds), the new algorithm gets information from the sensors about the number of cars in each lane and it choses when each lane should be let go (i.e Green Light) and when each lane should stop (i.e Red Light).
+
+To determine when a lane should stop, the algorithm continually checks the number of cars in each lane and makes a decision.
