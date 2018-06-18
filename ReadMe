@@ -1,4 +1,4 @@
-ABOUT THE PROJECT
+ABOUT THE PROJECT: (Status:Incomplete)
 
 Traffic AI aims to build an algorithm which can tackle the traffic at a busy intersection. As of now the project only exists as an algorithm, but it can be implemented using AI on a camera which will be able to correctly detect the number of cars in a lane, at an intersection.
 
